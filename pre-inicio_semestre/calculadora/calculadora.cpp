@@ -2,33 +2,64 @@
 // Created by raztor on 26/08/2022.
 //
 
-#include <iostream>
+#include <cstdio>
 
 int main(){
-    float a,b;
-    char op;
-    a=0;
-    while(a != 975) {
-        std::cout << " Ingrese el primer digito o 975 para salir: ";
-        std::cin >> a;
-        if (a == 975) {
-            break;
-        }
-
-        std::cout << "Ingrese una operacion (+ - * /): ";
-        std::cin >> op;
-        std::cout << "Ingrese segundo digito: ";
-        std::cin >> b;
+    float a,b,c;
+    int y = 1;
+    char op, ex;
+    while(y){
+        printf("Ingrese el primer digito: ");
+        scanf(" %f", &a);
+        printf("Ingrese una operacion (+ - * /): ");
+        scanf(" %c", &op);
+        printf("Ingrese el segundo digito: ");
+        scanf(" %f", &b);
 
         if (op == '+') {
-            std::cout << "El resultado es: " << a + b << std::endl;
+            c=a+b;
+            if (c == (int)c) {
+                printf("El resultado es: %i", int(c));
+            } else {
+                printf("El resultado es: %.4f", c);
+            }
         } else if (op == '-') {
-            std::cout << "\nEl resultado es: " << a - b << std::endl;
+            c=a-b;
+            if (c == (int)c) {
+                printf("El resultado es: %i", int(c));
+            } else {
+                printf("El resultado es: %.4f", c);
+            }
         } else if (op == '*') {
-            std::cout << "\nEl resultado es: " << a * b << std::endl;
+            c=a*b;
+            if (c == (int)c) {
+                printf("El resultado es: %i", int(c));
+            } else {
+                printf("El resultado es: %.4f", c);
+            }
         } else if (op == '/') {
-            std::cout << "\nEl resultado es: " << a / b << std::endl;
+            c=a/b;
+            if (c == (int)c) {
+                printf("El resultado es: %i", int(c));
+            } else {
+                printf("El resultado es: %.4f", c);
+            }
+            }
+        printf("\nDesea continuar? (s / n): ");
+        scanf(" %c", &ex);
+        while (true) {
+            if (ex == 's') {
+                y = 1;
+                break;
+            } else if (ex == 'n') {
+                y = 0;
+                break;
+            } else {
+                printf("Opcion no valida, intente de nuevo: s / n ");
+                scanf(" %c", &ex);
+            }
         }
     }
+
     return 0;
 }
