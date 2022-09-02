@@ -2,7 +2,6 @@
 // Created by raztor on 01-09-22.
 //
 
-#include <cstdio>
 #include <iostream>
 
 float calc(float a, float b, int op) {
