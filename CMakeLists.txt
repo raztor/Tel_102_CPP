@@ -16,3 +16,4 @@ add_executable(ej-1 Clase/Ayudantias/1/ej-1.cpp)
 add_executable(ej-2 Clase/Ayudantias/1/ej-2.cpp)
 
 add_executable(problema-1_1 Clase/Ayudantias/1/problema-1_1.cpp)
+add_executable(desafio Clase/Ayudantias/1/desafio.cpp)
