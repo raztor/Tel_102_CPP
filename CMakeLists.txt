@@ -12,3 +12,7 @@ add_executable(tropa-104 "Extra/Tropa 104/tropa-104.cpp")
 add_executable(Hello-World Extra/Hello-World.cpp)
 add_executable(calculadora Extra/calculadora/calculadora.cpp)
 add_executable(practico-1 Clase/C1/practico-1-2016/practico-1.cpp)
+add_executable(ej-1 Clase/Ayudantias/1/ej-1.cpp)
+add_executable(ej-2 Clase/Ayudantias/1/ej-2.cpp)
+
+add_executable(problema-1_1 Clase/Ayudantias/1/problema-1_1.cpp)
