@@ -3,7 +3,7 @@
 //
 #include <iostream>
 
-double elevado(double base, int exponente){
+double pow(double base, int exponente){
     double resultado = 1;
     if (exponente == 0){
         return 1;
@@ -25,8 +25,8 @@ int factorial(int n){
 
 double cosenoAprox(double x, int n){
     double result = 0;
-    for (int i = 0; i <= n; i++){
-        result += (((elevado(-1,i))/(factorial(2*i)))*(elevado(x,(2*1))));
+    for (int i = 1; i <= n; i++){
+        result += (((pow(-1,i))/(factorial(2*i)))*(pow(x,(2*1))));
     }
     std::cout << result << std::endl;
     return result;
