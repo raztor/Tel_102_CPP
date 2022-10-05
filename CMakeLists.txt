@@ -20,3 +20,4 @@ add_executable(desafio Clase/Ayudantias/1/desafio.cpp)
 add_executable(src "Clase/C1/C1 2021/src.cpp")
 
 add_executable(TE-102-C1-Benjamin-Munoz Clase/C1/C1-2022/TEL-102-C1-Benjamin-Munoz.cpp)
+add_executable(mesas Clase/C2/C2-2020-cssj/mesas.cpp)
