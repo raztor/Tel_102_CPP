@@ -11,10 +11,10 @@ private:
     string first_name, last_name;
 public:
     void set_age(int a){
-        age = a;
-    }
+            age = a;
+        }
     void set_standard(int s){
-        standard = s;
+            standard = s;
     }
     void set_first_name(string f_name){
         first_name=f_name;
